@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice game</title>
+</head>
+<style>
+    input {
+
+
+        height: 70px;
+        width: 220px;
+        font-size: x-large;
+        background-color: wheat;
+        border-radius: 12px;
+        color: black;
+        font-family: tah;
+        font-weight: bold;
+        margin-top: 100px;
+        cursor: pointer;
+        margin-left: 50px;
+
+    }
+
+    body {
+
+
+        background-image: url(./history-of-ludo.jpg);
+
+
+    }
+</style>
+
+<body>
+    <form action="">
+
+
+
+    </form>
+    <img id="im" src="./start-png-44888.png" height="140px" width="190px">
+    <input type="button" value="Roll dice" onclick="rolldice();">
+
+    <script>
+        function rolldice() {
+
+            var x = Math.floor(Math.random() * 6 + 1);
+            console.log(x);
+            var img1;
+            switch (x) {
+
+                case 1:
+                    img1 = document.getElementById('im').src = "1.png";
+                    document.getElementById('im').src = "1.png";
+                    break;
+
+                case 2:
+                    img1 = document.getElementById('im').src = "2.png";
+                    document.getElementById('im').src = "2.png";
+                    break;
+                case 3:
+                    img1 = document.getElementById('im').src = "3.png";
+                    document.getElementById('im').src = "3.png";
+                    break;
+                case 4:
+                    img1 = document.getElementById('im').src = "4.png";
+                    document.getElementById('im').src = "4.png";
+                    break;
+                case 5:
+                    img1 = document.getElementById('im').src = "5.png";
+                    document.getElementById('im').src = "5.png";
+                    break;
+                case 6:
+                    img1 = document.getElementById('im').src = "6.png";
+                    document.getElementById('im').src = "6.png";
+                    break;
+
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
